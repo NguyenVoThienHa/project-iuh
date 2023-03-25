@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HVAC Template">
+    <meta name="keywords" content="HVAC, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mazda_Car_18Group_Nhom18</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <script>
+        function testKyhan() {
+            if (document.getElementById("tg").value > 25) {
+                document.getElementById("er1").innerHTML = "No more than 25 years";
+            } else {
+                document.getElementById("er1").innerHTML = "";
+            }
+        }
+
+        function tinhtien() {
+
+            tt = document.getElementById("tienvay").value * (document.getElementById("lai").value / ((document.getElementById("tg").value * 12)))
+            document.getElementById("tien").innerText = tt;
+
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__widget">
+            <a href="#"><i class="fa fa-cart-plus"></i></a>
+            <a href="#" class="search-switch"><i class="fa fa-search"></i></a>
+            <a href="#" class="primary-btn">Log In</a>
+        </div>
+        <div class="offcanvas__logo">
+            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <ul class="offcanvas__widget__add">
+            <li><i class="fa fa-clock-o"></i> Week day: 08:00 am to 18:00 pm</li>
+            <li><i class="fa fa-envelope-o"></i> cararea@gmail.com</li>
+        </ul>
+        <div class="offcanvas__phone__num">
+            <i class="fa fa-phone"></i>
+            <span>0888 (29999996)</span>
+        </div>
+        <div class="offcanvas__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <ul class="header__top__widget">
+                            <li><i class="fa fa-clock-o"></i> Week day: 08:00 am to 18:00 pm</li>
+                            <li><i class="fa fa-envelope-o"></i> cararea@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="header__top__right">
+                            <div class="header__top__phone">
+                                <i class="fa fa-phone"></i>
+                                <span>0888 (29999996)</span>
+                            </div>
+                            <div class="header__top__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav">
+                        <nav class="header__menu">
+                            <ul>
+                                <li><a href="./index.html">Home</a></li>
+                                <li class="active"><a href="./car.html">Cars</a>
+                                    <ul class="dropdown">
+                                        
+                                        <li><a href="./car-detail_Lexus.html">Lexus</a></li>
+                                        <li><a href="./car-detail_BMW.html">BMW</a></li>
+                                        <li><a href="./car-detail_lambo.html">Lamborghini</a></li>
+                                        <li><a href="./car-detail_Mazda.html">Mazda</a></li>
+                                        <li><a href="./car-detail_porche.html">Porsche</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__nav__widget">
+                            
+                            <div class="popup-client">
+                                <button type="submit" class="btn primary-btn" data-toggle="modal" data-target="#myModal">
+                                    Login
+                                </button>
+    
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open">
+                <span class="fa fa-bars"></span>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb End -->
+    <div class="breadcrumb-option set-bg" data-setbg="img/breadcrumb-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Mazda3 Sedan 1.5 Deluxe</h2>
+                        <div class="breadcrumb__links">
+                            <a href="./index.html"><i class="fa fa-home"></i> Home</a>
+                            <a href="#">Car Listing</a>
+                            <span>Mazda3 Sedan 1.5 Deluxe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Begin -->
+
+    <!-- Car Details Section Begin -->
+    <section class="car-details spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="car__details__pic">
+                        <div class="car__details__pic__large">
+                            <img class="car-big-img" src="img/cars/details/MAZDA 3/MAZDA 3 (1).jpg" alt="">
+                        </div>
+                        <div class="car-thumbs">
+                            <div class="car-thumbs-track car__thumb__slider owl-carousel">
+                                <div class="ct" data-imgbigurl="img/cars/details/MAZDA 3/MAZDA 3 (2).jpg"><img
+                                        src="img/cars/details/MAZDA 3/MAZDA 3 (2).jpg" alt=""></div>
+                                <div class="ct" data-imgbigurl="img/cars/details/MAZDA 3/MAZDA 3 (3).jpg"><img
+                                        src="img/cars/details/MAZDA 3/MAZDA 3 (3).jpg" alt=""></div>
+                                <div class="ct" data-imgbigurl="img/cars/details/MAZDA 3/MAZDA 3 (4).jpg"><img
+                                        src="img/cars/details/MAZDA 3/MAZDA 3 (4).jpg" alt=""></div>
+                                <div class="ct" data-imgbigurl="img/cars/details/MAZDA 3/MAZDA 3 (5).jpg"><img
+                                        src="img/cars/details/MAZDA 3/MAZDA 3 (5).jpg" alt=""></div>
+                                <div class="ct" data-imgbigurl="img/cars/details/MAZDA 3/MAZDA 3 (6).jpg"><img
+                                        src="img/cars/details/MAZDA 3/MAZDA 3 (6).jpg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car__details__tab">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Vehicle
+                                    Overview</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Technical</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Features & Options</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">Vehicle Location</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                <div class="car__details__tab__info">
+                                    <div class="row">
+                                        <div style="text-align: justify;" class="col-lg-6 col-md-6">
+                                            <div class="car__details__tab__info__item">
+                                                <h5>General Information</h5>
+                                                <ul>
+                                                    <li><i class="fa fa-check"></i> Car provides every Q8 with a turbocharged 3.0-liter V-6 that makes 335 horsepower and 369 lb-ft of torque.</li>
+                                                    <li><i class="fa fa-check"></i> It pairs with an eight-speed automatic transmission and the legendary Quattro all-wheel drive. </li>
+                                                    <li><i class="fa fa-check"></i> Pellentesque erat libero, eleifend
+                                                        sit amet felis ido.</li>
+                                                    <li><i class="fa fa-check"></i> While the Audi had deliberate passing power on the highway, it felt hesitant around town unless we crushed the gas pedal. </li>
+                                                    <li><i class="fa fa-check"></i> The transmission had mostly dutiful reactions, but it and the engine best cooperated in Dynamic mode. </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div style="text-align: justify;" class="col-lg-6 col-md-6">
+                                            <div class="car__details__tab__info__item">
+                                                <!-- <h5>General Information</h5> -->
+                                                <ul style="margin-top: 25px;">
+                                                    <li><i class="fa fa-check"></i> We only wish the engine and exhaust made gutsier sounds. The Q8 can also tow up to 7700 pounds when properly equipped.</li>
+                                                    <li><i class="fa fa-check"></i> AThe Q8's steering has light effort and linear feedback, which was relaxing on long trips but boring on switchback roads.</li>
+                                                    <li><i class="fa fa-check"></i> Our test vehicle had the optional air suspension and wore 22-inch wheels—20-inchers are standard. </li>
+                                                    <li><i class="fa fa-check"></i> These large rollers were mostly quiet even on uneven surfaces.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="car__details__tab__feature">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <div class="car__details__tab__feature__item">
+                                                <h5>Interior Design</h5>
+                                                <ul>
+                                                    <li><i class="fa fa-check-circle"></i> Auxiliary heating</li>
+                                                    <li><i class="fa fa-check-circle"></i> Bluetooth</li>
+                                                    <li><i class="fa fa-check-circle"></i> CD player</li>
+                                                    <li><i class="fa fa-check-circle"></i> Central locking</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <div class="car__details__tab__feature__item">
+                                                <h5>Safety Design</h5>
+                                                <ul>
+                                                    <li><i class="fa fa-check-circle"></i> Head-up display</li>
+                                                    <li><i class="fa fa-check-circle"></i> MP3 interface</li>
+                                                    <li><i class="fa fa-check-circle"></i> Navigation system</li>
+                                                    <li><i class="fa fa-check-circle"></i> Panoramic roof</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <div class="car__details__tab__feature__item">
+                                                <h5>Extra Design</h5>
+                                                <ul>
+                                                    <li><i class="fa fa-check-circle"></i> Alloy wheels</li>
+                                                    <li><i class="fa fa-check-circle"></i> Electric side mirror</li>
+                                                    <li><i class="fa fa-check-circle"></i> Sports package</li>
+                                                    <li><i class="fa fa-check-circle"></i> Sports suspension</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <div class="car__details__tab__feature__item">
+                                                <h5>Extra Design</h5>
+                                                <ul>
+                                                    <li><i class="fa fa-check-circle"></i> MP3 interface</li>
+                                                    <li><i class="fa fa-check-circle"></i> Navigation system</li>
+                                                    <li><i class="fa fa-check-circle"></i> Panoramic roof</li>
+                                                    <li><i class="fa fa-check-circle"></i> Parking sensors</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                <div class="car__details__tab__info">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="car__details__tab__info__item">
+                                                <h5>Specifications</h5>
+                                                <ul>
+                                                    <li><i class="fa fa-check"></i> Build in USA</li>
+                                                    <li><i class="fa fa-check"></i> Engine Capacity: 1496cc</li>
+                                                    <li><i class="fa fa-check"></i> Bore/Stroke: 74 X 85.8mm</li>
+                                                    <li><i class="fa fa-check"></i> Recommended Fuel Grade:	95 RON</li>
+                                                    <li><i class="fa fa-check"></i> Max Power:	118 Bhp / 6000 rpm</li>
+                                                    <li><i class="fa fa-check"></i> Max Torque:	150 Nm / 4000 rpm</li>
+                                                    <li><i class="fa fa-check"></i> 0-100 km/h:	11.7 secs</li>
+                                                    <li><i class="fa fa-check"></i> Top Speed:	185 km/h</li>
+                                                    <li><i class="fa fa-check"></i> BHP/Litre:	78.9 bhp/litre</li>
+                                                        
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="car__details__tab__info__item">
+                                                <h5>Dimensions</h5>
+                                                <ul>
+                                                    <li><i class="fa fa-check"></i> PKerb Weight: 1339 kg</li>
+                                                    <li><i class="fa fa-check"></i> Length:	4580 mm</li>
+                                                    <li><i class="fa fa-check"></i> Height:	1450 mm</li>
+                                                    <li><i class="fa fa-check"></i> Width: 1795 mm</li>
+                                                    <li><i class="fa fa-check"></i> Fuel Capacity: 51 litres</li>
+                                                    <li><i class="fa fa-check"></i> Tyre Size: 205/60 R16</li>
+                                                    <li><i class="fa fa-check"></i> Electronic/Hydraulic Pinion: Electric</li>
+                                                    <li><i class="fa fa-check"></i> Front Suspension: MacPherson Strut</li>
+                                                    <li><i class="fa fa-check"></i> Rear Suspension: Multi-Link</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="car__details__tab__feature">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <div class="car__details__tab__feature__item">
+                                                <h5>Interior Design</h5>
+                                                <ul>
+                                                    <li><i class="fa fa-check-circle"></i> Auxiliary heating</li>
+                                                    <li><i class="fa fa-check-circle"></i> Bluetooth</li>
+                                                    <li><i class="fa fa-check-circle"></i> CD player</li>
+                                                    <li><i class="fa fa-check-circle"></i> Central locking</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <div class="car__details__tab__feature__item">
+                                                <h5>Safety Design</h5>
+                                                <ul>
+                                                    <li><i class="fa fa-check-circle"></i> Head-up display</li>
+                                                    <li><i class="fa fa-check-circle"></i> MP3 interface</li>
+                                                    <li><i class="fa fa-check-circle"></i> Navigation system</li>
+                                                    <li><i class="fa fa-check-circle"></i> Panoramic roof</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <div class="car__details__tab__feature__item">
+                                                <h5>Extra Design</h5>
+                                                <ul>
+                                                    <li><i class="fa fa-check-circle"></i> Alloy wheels</li>
+                                                    <li><i class="fa fa-check-circle"></i> Electric side mirror</li>
+                                                    <li><i class="fa fa-check-circle"></i> Sports package</li>
+                                                    <li><i class="fa fa-check-circle"></i> Sports suspension</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <div class="car__details__tab__feature__item">
+                                                <h5>Extra Design</h5>
+                                                <ul>
+                                                    <li><i class="fa fa-check-circle"></i> MP3 interface</li>
+                                                    <li><i class="fa fa-check-circle"></i> Navigation system</li>
+                                                    <li><i class="fa fa-check-circle"></i> Panoramic roof</li>
+                                                    <li><i class="fa fa-check-circle"></i> Parking sensors</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                <div class="car__details__tab__info">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div style="text-align: justify;" class="car__details__tab__info__item">
+                                                <h5>Engines-Ride</h5>
+                                                <ul>
+                                                    <li>
+                                                        <i class="fa fa-check"></i>
+                                                        The rear-wheel-drive coupe and convertible feature a 571-hp version of the naturally aspirated 5.2-liter engine that pairs with a seven-speed dual-clutch automatic transmission 
+                                                    </li>
+                                                    <li><i class="fa fa-check"></i> Engine output increases to 602 ponies on the all-wheel-drive coupe and convertible, with the coupe ripping from zero to 60 mph in 2.5 seconds</li>
+                                                    <li><i class="fa fa-check"></i> Pellentesque erat libero, eleifend
+                                                        sit amet felis ido.</li>
+                                                    <li><i class="fa fa-check"></i> Maecenas eget consectetur quam.
+                                                        Vestibulum ligula.</li>
+                                                    <li><i class="fa fa-check"></i> Praesent lorem sapien, vestibulum
+                                                        eget aliquet et.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div style="text-align: justify;" class="col-lg-6 col-md-6">
+                                            <div class="car__details__tab__info__item">
+                                                <h5>Handling</h5>
+                                                <ul>
+                                                    <li><i class="fa fa-check"></i> The coupe we tested at our annual Lightning Lap event recorded a remarkable lap time, and its intoxicating exhaust note made us drunk every time it reached our ears.</li>
+                                                    <li><i class="fa fa-check"></i> The Evo model's 631 horsepower is funneled to all four wheels and also includes rear-wheel steering for improved agility.</li>
+                                                    <li><i class="fa fa-check"></i> Pellentesque erat libero, eleifend
+                                                        sit amet felis ido.</li>
+                                                    <li><i class="fa fa-check"></i> Plus, the newest Huracán has a predictive system that adapts to driver inputs on the fly.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="car__details__tab__feature">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <div class="car__details__tab__feature__item">
+                                                <h5>Interior Design</h5>
+                                                <ul>
+                                                    <li><i class="fa fa-check-circle"></i> Auxiliary heating</li>
+                                                    <li><i class="fa fa-check-circle"></i> Bluetooth</li>
+                                                    <li><i class="fa fa-check-circle"></i> CD player</li>
+                                                    <li><i class="fa fa-check-circle"></i> Central locking</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <div class="car__details__tab__feature__item">
+                                                <h5>Safety Design</h5>
+                                                <ul>
+                                                    <li><i class="fa fa-check-circle"></i> Head-up display</li>
+                                                    <li><i class="fa fa-check-circle"></i> MP3 interface</li>
+                                                    <li><i class="fa fa-check-circle"></i> Navigation system</li>
+                                                    <li><i class="fa fa-check-circle"></i> Panoramic roof</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <div class="car__details__tab__feature__item">
+                                                <h5>Extra Design</h5>
+                                                <ul>
+                                                    <li><i class="fa fa-check-circle"></i> Alloy wheels</li>
+                                                    <li><i class="fa fa-check-circle"></i> Electric side mirror</li>
+                                                    <li><i class="fa fa-check-circle"></i> Sports package</li>
+                                                    <li><i class="fa fa-check-circle"></i> Sports suspension</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <div class="car__details__tab__feature__item">
+                                                <h5>Extra Design</h5>
+                                                <ul>
+                                                    <li><i class="fa fa-check-circle"></i> MP3 interface</li>
+                                                    <li><i class="fa fa-check-circle"></i> Navigation system</li>
+                                                    <li><i class="fa fa-check-circle"></i> Panoramic roof</li>
+                                                    <li><i class="fa fa-check-circle"></i> Parking sensors</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tabs-4" role="tabpanel">
+                                <div class="car__details__tab__info">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="car__details__tab__info__item">
+                                                <h5>All over the world</h5>
+                                                <ul>
+                                                    <li><i class="fa fa-check"></i>Asia</li>
+                                                    <li><i class="fa fa-check"></i>Africa</li>
+                                                    <li><i class="fa fa-check"></i>Europe</li>
+                                                    <li><i class="fa fa-check"></i>Australia</li>
+                                                    <li><i class="fa fa-check"></i>America</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="car__details__tab__feature">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <div class="car__details__tab__feature__item">
+                                                <h5>Interior Design</h5>
+                                                <ul>
+                                                    <li><i class="fa fa-check-circle"></i> Auxiliary heating</li>
+                                                    <li><i class="fa fa-check-circle"></i> Bluetooth</li>
+                                                    <li><i class="fa fa-check-circle"></i> CD player</li>
+                                                    <li><i class="fa fa-check-circle"></i> Central locking</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <div class="car__details__tab__feature__item">
+                                                <h5>Safety Design</h5>
+                                                <ul>
+                                                    <li><i class="fa fa-check-circle"></i> Head-up display</li>
+                                                    <li><i class="fa fa-check-circle"></i> MP3 interface</li>
+                                                    <li><i class="fa fa-check-circle"></i> Navigation system</li>
+                                                    <li><i class="fa fa-check-circle"></i> Panoramic roof</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <div class="car__details__tab__feature__item">
+                                                <h5>Extra Design</h5>
+                                                <ul>
+                                                    <li><i class="fa fa-check-circle"></i> Alloy wheels</li>
+                                                    <li><i class="fa fa-check-circle"></i> Electric side mirror</li>
+                                                    <li><i class="fa fa-check-circle"></i> Sports package</li>
+                                                    <li><i class="fa fa-check-circle"></i> Sports suspension</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <div class="car__details__tab__feature__item">
+                                                <h5>Extra Design</h5>
+                                                <ul>
+                                                    <li><i class="fa fa-check-circle"></i> MP3 interface</li>
+                                                    <li><i class="fa fa-check-circle"></i> Navigation system</li>
+                                                    <li><i class="fa fa-check-circle"></i> Panoramic roof</li>
+                                                    <li><i class="fa fa-check-circle"></i> Parking sensors</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="car__details__sidebar">
+                        <div class="car__details__sidebar__model">
+                            <ul>
+                                <li>Price <span>$18,900</span></li>
+                                <li>Stock <span>K99D10459934</span></li>
+                                <li>Vin <span>3VWKM245686</span></li>
+                            </ul>
+                            <a href="#" class="primary-btn"><i class="fa fa-credit-card"></i> Express Purchase</a>
+                            
+                        </div>
+                        
+                        <div style="margin-top: 30px;" class="car__details__sidebar__payment">
+                            <h2>Installment</h2>
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="tienvay">Money:</label>
+                                <input type="text" class="form-control" id="tienvay" placeholder="3000000">
+        
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="tg">Term (years):</label>
+                                <input type="text" class="form-control" id="tg" onblur="testKyhan()" placeholder="No more than 25 years">
+                                <span id="er1"><h6 style="color: red; font-size: 12px;">* No more than 25 years</h6></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="lai">Interest (%):</label>
+                                <input type="text" class="form-control" id="lai" placeholder="1">
+        
+                            </div>
+                            
+                        </form>
+                            <a href="#" class="primary-btn sidebar-btn" type="submit" data-toggle="modal" data-target="#myModal1" onclick="tinhtien()">
+                                <i class="fa fa-sliders"></i> Estimate
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Car Details Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer set-bg" data-setbg="img/footer-bg.jpg">
+        <div class="container">
+            <div class="footer__contact">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__contact__title">
+                            <h2>Contact Us Now!</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__contact__option">
+                            <div class="option__item"><i class="fa fa-phone"></i> 0888 (29999996)</div>
+                            <div class="option__item email"><i class="fa fa-envelope-o"></i> cararea@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="footer__about">
+                        <div style="font-size: 30px; color: white;" class="footer__logo">
+                            
+                            <a href="./car.html">
+                                <i class="fa fa-empire"> Car18Group</i>
+                            </a>
+                        </div>
+                        <p>Any questions? 
+                            <br>
+                            Let us know in store at 12 Nguyen Van Bao, Ward 4, Go Vap District, Ho Chi Minh City 
+                            <br>
+                            or call us on 0888 (29999996)</p>
+                        <div class="footer__social">
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="google"><i class="fa fa-google"></i></a>
+                            <a href="#" class="skype"><i class="fa fa-skype"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3">
+                    <div class="footer__widget">
+                        <h5>Infomation</h5>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Purchase</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Payemnt</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Shipping</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Return</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <div class="footer__widget">
+                        <h5>Infomation</h5>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Hatchback</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Sedan</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> SUV</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Crossover</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer__brand">
+                        <h5>Top Brand</h5>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Abarth</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Acura</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Alfa Romeo</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Audi</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> BMW</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Chevrolet</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Ferrari</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Honda</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Link to group-->
+            <div class="footer__copyright__text">
+                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>  <i class="fa fa-heart" aria-hidden="true"></i> <a href="./index.html" target="_blank">  Car18Group</a></p>
+            </div>
+            <!-- Link to group-->
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+    <!-- Login -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <i class="fa fa-user"></i>
+                            <input type="text" class="form-control" placeholder="Username" required="required">
+                        </div>
+                        <div class="form-group">
+                            <i class="fa fa-lock"></i>
+                            <input type="password" class="form-control" placeholder="Password" required="required">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
+                        </div>
+                        <div class="form-group">
+                            <a href="../hvac/Signin.html">SIGN UP</a>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+    <!-- Estimate -->
+    <div id="myModal1" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Estimated amount to be paid monthly</h4>
+                </div>
+                <div class="modal-body">
+                    <label>Monthly payments:</label>
+                    <span id="tien"> </span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Estimate -->
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

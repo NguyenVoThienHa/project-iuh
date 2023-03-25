@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HVAC Template">
+    <meta name="keywords" content="HVAC, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About_Car_18Group_Nhom18</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <script>
+        function Kthoten(){
+            var regex=/^[A-Z]{1,}/;
+            var ht =document.getElementById("hoten").value;
+            if(regex.test(ht)== false){
+                document.getElementById("changenhoten").innerHTML = "Please enter your fullname";
+                return false;
+            }else{
+                document.getElementById("changenhoten").innerHTML = "";
+                return true;
+            }
+        }
+        function Ktsdt(){
+            var regex=/^(0?)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$/;
+            var sdt =document.getElementById("sdt").value;
+            if(regex.test(sdt)== false){
+                document.getElementById("changensdt").innerHTML = "Please enter your phone";
+                return false;
+            }else{
+                document.getElementById("changensdt").innerHTML = "";
+                return true;
+            }
+        }
+        function Ktmail(){
+            var regex=/^([A-Z|a-z|0-9](\.|_){0,1})+[A-Z|a-z|0-9]\@([A-Z|a-z|0-9])+\.[a-z]{3}$/;
+            var mail =document.getElementById("mail").value;
+            if(regex.test(mail)== false){
+                document.getElementById("changemail").innerHTML = "Please enter valid email";
+                return false;
+            }else{
+                document.getElementById("changemail").innerHTML = "";
+                return true;
+            }
+        }
+        function mokhoa() {
+            if ((Kthoten() == true) && Ktmail() == true && Ktmk() == true && Ktnl() == true && Tdn()== true) {
+                document.getElementById("btdk").disabled = false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__widget">
+            <a href="#"><i class="fa fa-cart-plus"></i></a>
+            <a href="#" class="search-switch"><i class="fa fa-search"></i></a>
+            <a href="#" class="primary-btn">Add Car</a>
+        </div>
+        <div class="offcanvas__logo">
+            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <ul class="offcanvas__widget__add">
+            <li><i class="fa fa-clock-o"></i> Week day: 08:00 am to 18:00 pm</li>
+            <li><i class="fa fa-envelope-o"></i> cararea@gmail.com</li>
+        </ul>
+        <div class="offcanvas__phone__num">
+            <i class="fa fa-phone"></i>
+            <span>0888 (29999996)</span>
+        </div>
+        <div class="offcanvas__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <ul class="header__top__widget">
+                            <li><i class="fa fa-clock-o"></i> Week day: 08:00 am to 18:00 pm</li>
+                            <li><i class="fa fa-envelope-o"></i> cararea@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="header__top__right">
+                            <div class="header__top__phone">
+                                <i class="fa fa-phone"></i>
+                                <span>0888 (29999996)</span>
+                            </div>
+                            <div class="header__top__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav">
+                        <nav class="header__menu">
+                            <ul>
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./car.html">Cars</a>
+                                    <ul class="dropdown">
+                                        <li><a href="./car-detail_Lexus.html">Lexus</a></li>
+                                        <li><a href="./car-detail_BMW.html">BMW</a></li>
+                                        <li><a href="./car-detail_lambo.html">Lamborghini</a></li>
+                                        <li><a href="./car-detail_Mazda.html">Mazda</a></li>
+                                        <li><a href="./car-detail_porche.html">Porsche</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="active"><a href="./about.html">About</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__nav__widget">
+                            
+                            <div class="popup-client">
+                                <button type="submit" class="btn primary-btn" data-toggle="modal" data-target="#myModal">
+                                    Login
+                                </button>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open">
+                <span class="fa fa-bars"></span>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb End -->
+    <div class="breadcrumb-option set-bg" data-setbg="img/breadcrumb-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>About Us</h2>
+                        <div class="breadcrumb__links">
+                            <a href="./index.html"><i class="fa fa-home"></i> Home</a>
+                            <span>About Us</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Begin -->
+
+    <!-- About Us Section Begin -->
+    <section class="about spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title about-title">
+                        <h2>Wellcome To Car18Group Auto Online <br />We Provide Everything You Need To A Car</h2>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="about__feature">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="about__feature__item">
+                            <img src="img/about/af-1.png" alt="">
+                            <h5>Quality Assurance System</h5>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="about__feature__item">
+                            <img src="img/about/af-2.png" alt="">
+                            <h5>Accurate Testing Processes</h5>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="about__feature__item">
+                            <img src="img/about/af-3.png" alt="">
+                            <h5>Infrastructure Integration Technology</h5>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about__pic">
+                        <img src="img/about/about-pic.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="about__item">
+                        <h5>Our Mission</h5>
+                        <p style="text-align: justify;">Company Mission Statement is officially referred to as the Company Principle, and it seemingly is no different than the mission of every company that manufactures and sells cars in the world</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="about__item">
+                        <h5>Our Vision</h5>
+                        <p style="text-align: justify;">Our vision is to build cars people want to buy, will enjoy driving and will want to buy again." The company further defines its "purpose": "To create the type of exciting, efficient, reliable, safe vehicles you expect and deserve." Company Mission Statement—Global Quality, Youthfulness, Harmony, and Joy. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Us Section End -->
+
+    <!-- Call Section Begin -->
+    <section class="call spad set-bg" data-setbg="img/about/call-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-6">
+                    <div class="call__text">
+                        <div class="section-title">
+                            <h2>Connect With Us In Here</h2>
+                            
+                        </div>
+                        <a href="./contact.html">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1 col-md-6">
+                    <form action="#" class="call__form">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <!-- <input type="text" placeholder="Name"> -->
+                                <input type="text" id="hoten" onblur="Kthoten()" placeholder="Full Name" class="form-control"><span id="changenhoten" style="color: darkred;"></span>
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" id="mail" onblur="Ktmail();mokhoa()" class="form-control" placeholder="Email"><span id="changemail" style="color: darkred;"></span>
+                                <!-- <input type="text" placeholder="Email"> -->
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" id="sdt" onblur="Ktsdt()" placeholder="Phone" class="form-control" ><span id="changensdt" style="color: darkred;"></span>
+                                <!-- <input type="text" placeholder="Phone"> -->
+                            </div>
+                            <div class="col-lg-6">
+                                <select>
+                                    <option value="">Choose Our Services</option>
+                                    <option value="">Buy Cars</option>
+                                    <option value="">Sell Cars</option>
+                                    <option value="">Wash Cars</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="site-btn">Submit Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call Section End -->
+
+    <!-- Team Section Begin -->
+    <section class="team spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title team-title">
+                        <span>Our Team</span>
+                        <h2>Meet Our Expert</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team__item">
+                        <div class="team__item__pic">
+                            <img src="img/about/team-5.jpg" alt="">
+                        </div>
+                        <div class="team__item__text">
+                            <h5>Ly Ngoc Vu</h5>
+                            <span>20075351</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team__item">
+                        <div class="team__item__pic">
+                            <img src="img/about/team-6.PNG" alt="">
+                        </div>
+                        <div class="team__item__text">
+                            <h5>Nguyen Vo Thien Ha</h5>
+                            <span>18077791</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team__item">
+                        <div class="team__item__pic">
+                            <img src="img/about/team-9.PNG" alt="">
+                        </div>
+                        <div class="team__item__text">
+                            <h5>Tran Gia Bao</h5>
+                            <span>20123891</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team__item">
+                        <div class="team__item__pic">
+                            <img src="img/about/team-10.PNG" alt="">
+                        </div>
+                        <div class="team__item__text">
+                            <h5>Trinh Anh Chung</h5>
+                            <span>19494291</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team__item">
+                        <div class="team__item__pic">
+                            <img src="img/about/team-11.PNG" alt="">
+                        </div>
+                        <div class="team__item__text">
+                            <h5>Huynh Van Minh</h5>
+                            <span>21094041</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section End -->
+
+    <!-- Testimonial Section Begin -->
+    <section class="testimonial spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title testimonial-title">
+                        <span>Testimonials</span>
+                        <h2>What People Say About Us</h2>
+                        <p>Our customers are our biggest supporters. What do they think of us?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="testimonial__slider owl-carousel">
+                    <div class="col-lg-6">
+                        <div class="testimonial__item">
+                            <div class="testimonial__item__author">
+                                <div class="testimonial__item__author__pic">
+                                    <img src="img/testimonial/testimonial-2.png" alt="">
+                                </div>
+                                <div class="testimonial__item__author__text">
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <h5>Ms.Ngoc My /<span>VIP Customer</span></h5>
+                                </div>
+                            </div>
+                            <p>The car lines are very diverse</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="testimonial__item">
+                            <div class="testimonial__item__author">
+                                <div class="testimonial__item__author__pic">
+                                    <img src="img/testimonial/testimonial-1.png" alt="">
+                                </div>
+                                <div class="testimonial__item__author__text">
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <h5>Mr.Thanh Dat /<span> Customer</span></h5>
+                                </div>
+                            </div>
+                            <p>Experience and feel the service quality is very good</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="testimonial__item">
+                            <div class="testimonial__item__author">
+                                <div class="testimonial__item__author__pic">
+                                    <img src="img/testimonial/testimonial-1.png" alt="">
+                                </div>
+                                <div class="testimonial__item__author__text">
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <h5>Mr. Huy/<span> Customer</span></h5>
+                                </div>
+                            </div>
+                            <p>Five-star rating for quality</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="testimonial__item">
+                            <div class="testimonial__item__author">
+                                <div class="testimonial__item__author__pic">
+                                    <img src="img/testimonial/testimonial-2.png" alt="">
+                                </div>
+                                <div class="testimonial__item__author__text">
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <h5>Ms. Hieu Uyen /<span> Customer</span></h5>
+                                </div>
+                            </div>
+                            <p>Friendly staff, attentive customer service</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Section End -->
+
+    <!-- Counter Begin -->
+    <div class="counter spad set-bg" data-setbg="img/counter-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="counter__item">
+                        <h2 class="counter-num">1922</h2>
+                        <p>Vehicles Stock</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="counter__item">
+                        <h2 class="counter-num">1500</h2>
+                        <strong>+</strong>
+                        <p>Vehicles Sale</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="counter__item">
+                        <h2 class="counter-num">1922</h2>
+                        <p>Dealer Reviews</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="counter__item">
+                        <h2 class="counter-num">5100</h2>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Counter End -->
+
+    <!-- Clients Begin -->
+    <div class="clients spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title client-title">
+                        <span>Partner</span>
+                        <h2>Our Clients</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#" class="client__item">
+                        <img src="img/clients/client-1.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#" class="client__item">
+                        <img src="img/clients/client-2.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#" class="client__item">
+                        <img src="img/clients/client-3.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#" class="client__item">
+                        <img src="img/clients/client-2.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#" class="client__item">
+                        <img src="img/clients/client-4.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#" class="client__item">
+                        <img src="img/clients/client-5.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#" class="client__item">
+                        <img src="img/clients/client-6.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#" class="client__item">
+                        <img src="img/clients/client-7.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Clients End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer set-bg" data-setbg="img/footer-bg.jpg">
+        <div class="container">
+            <div class="footer__contact">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__contact__title">
+                            <h2>Contact Us Now!</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__contact__option">
+                            <div class="option__item"><i class="fa fa-phone"></i> 0888 (29999996)</div>
+                            <div class="option__item email"><i class="fa fa-envelope-o"></i> cararea@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="footer__about">
+                        <div style="font-size: 30px; color: white;" class="footer__logo">
+                            <!-- <a href="#"><img src="img/footer-logo.png" alt=""></a> -->
+                            <a href="./about.html">
+                                <i class="fa fa-empire"> Car18Group</i>
+                            </a>
+                        </div>
+                        <p>Any questions? 
+                            <br>
+                            Let us know in store at 12 Nguyen Van Bao, Ward 4, Go Vap District, Ho Chi Minh City 
+                            <br>
+                            or call us on 0888 (29999996)</p>
+                        <div class="footer__social">
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="google"><i class="fa fa-google"></i></a>
+                            <a href="#" class="skype"><i class="fa fa-skype"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3">
+                    <div class="footer__widget">
+                        <h5>Infomation</h5>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Purchase</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Payemnt</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Shipping</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Return</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <div class="footer__widget">
+                        <h5>Infomation</h5>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Hatchback</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Sedan</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> SUV</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Crossover</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer__brand">
+                        <h5>Top Brand</h5>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Abarth</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Acura</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Alfa Romeo</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Audi</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> BMW</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Chevrolet</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Ferrari</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Honda</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Link to group -->
+            <div class="footer__copyright__text">
+                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> <i class="fa fa-heart" aria-hidden="true"></i> <a href="./index.html" target="_blank"> Car18Group</a></p>
+            </div>
+            <!-- Link to group -->
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+    <!-- Login -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <i class="fa fa-user"></i>
+                            <input type="text" class="form-control" placeholder="Username" required="required">
+                        </div>
+                        <div class="form-group">
+                            <i class="fa fa-lock"></i>
+                            <input type="password" class="form-control" placeholder="Password" required="required">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
+                        </div>
+                        <div class="form-group">
+                            <a href="./Signin.html">SIGN UP</a>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login -->
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
